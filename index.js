@@ -1,6 +1,7 @@
 let express = require("express");
 
 let app = express();
+app.enable('trust proxy');
 
 app.use(express.static('public'));
 
